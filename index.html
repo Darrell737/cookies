@@ -5,7 +5,7 @@
          document.getElementById('ammountAutoClick').innerHTML = "You Own " + autoClick + " Auto Clickers"
          document.getElementById('costAutoClick').innerHTML = "Cost: " + ((autoClick+1) * 12) + " Cookies"
          document.getElementById('ammountFarm').innerHTML = "You Own " + farmClick + " Farms"
-         document.getElementById('costFarm').innerHTML = "Cost: " + ((farmClick+2) * 12) + " Cookies"
+         document.getElementById('costFarm').innerHTML = "Cost: " + ((farmClick+2) * 100) + " Cookies"
   }
   var cookiecount = 0;
   var autoClick= 0;
@@ -142,9 +142,9 @@
       }
       
       function buyFarm(){
-        if (cookiecount >= ((farmClick+2) * 12)) {
-            cookiecount = cookiecount - ((farmClick+2) * 12);
-            farmSpeed = farmSpeed +2;
+        if (cookiecount >= ((farmClick+2) * 100)) {
+            cookiecount = cookiecount - ((farmClick+2) * 100);
+            farmSpeed = farmSpeed +100;
             farmClick = farmClick +1;
             update()
         }
