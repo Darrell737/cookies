@@ -1,6 +1,7 @@
 <script>
   function update() {
          document.getElementById('text').value = cookiecount;
+         document.getElementById('skeet').value = factorySpeed + farmSpeed + autoClick
          document.title = cookiecount + " Cookies" 
          document.getElementById('ammountAutoClick').innerHTML = "You Own " + autoClick + " Auto Clickers"
          document.getElementById('costAutoClick').innerHTML = "Cost: " + ((autoClick+1) * 12) + " Cookies"
@@ -31,14 +32,14 @@
         background-color: #ccc;
       }
       .thecookiething {
-        margin-left:455px
+        margin-left:455px;
       }
       .thetextthingatthescreen {
-        margin-left:543px
+        margin-left:543px;
       }
       .weirdthingg {
         margin-left:1000px;
-        margin-top:-430px;
+        margin-top:-565px;
       }
       .farmthingyy {
         margin-left:1000px;
@@ -47,6 +48,10 @@
       .factoriiii {
         margin-left:1000px;
         margin-top:-35px;
+      }
+      .beanbutt {
+        margin-left:543px;
+        margin-top:-40px;
       }
     </style>
     <title>
@@ -59,6 +64,9 @@
         </div>
     <br><br>
     <div class="thetextthingatthescreen">
+      <p>
+        Cookies:
+      </p>
        <input type="text" id="text" disabled style= "text-align:center">
     </div>
      <script> 
@@ -67,6 +75,13 @@
          update()
        }
     </script>
+    <br><br>
+   <div class="beanbutt">
+     <p>
+       CPS:
+     </p>
+     <input type="text" id="skeet" disabled style= "text-align:center">
+    </div>
     <br><br>
     <div class="weirdthingg">
       <table table  border="2" bgcolor="#efefef">
