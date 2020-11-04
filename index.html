@@ -2,7 +2,7 @@
   function update() {
          document.getElementById('text').value = cookiecount;
          document.getElementById('skeet').value = factorySpeed + farmSpeed + autoClick + rocketSpeed + portalSpeed + timeSpeed;
-         document.title = cookiecount + " Cookies" 
+         document.title = cookiecount + " Cookies"
          document.getElementById('ammountAutoClick').innerHTML = "You Own " + autoClick + " Auto Clickers"
          document.getElementById('costAutoClick').innerHTML = "Cost: " + ((autoClick+1) * 10) + " Cookies"
          document.getElementById('ammountFarm').innerHTML = "You Own " + farmClick + " Farms"
@@ -54,10 +54,10 @@
         background-color: #ccc;
       }
       .thecookiething {
-        margin-left:455px;
+        margin-left:470px;
       }
       .thetextthingatthescreen {
-        margin-left:543px;
+        margin-left:565px;
       }
       .weirdthingg {
         margin-left:1000px;
@@ -72,7 +72,7 @@
         margin-top:-35px;
       }
       .beanbutt {
-        margin-left:543px;
+        margin-left:565px;
         margin-top:-40px;
       }
       .rokitshitt {
@@ -87,6 +87,13 @@
         margin-left:1000px;
         margin-top:-35px;
         
+      }
+      .creditsandstuff {
+        margin-top: -500px;
+      }
+      .bigbean {
+        margin-top: 10px;
+        margin-left: 25px;
       }
     </style>
     <title>
@@ -219,6 +226,59 @@
         </tr>
       </table>
     </div>
+    <br><br>
+    <div class="creditsandstuff">
+      <table table border="2" bgcolor="#efefef">
+      <tr>
+        <th>
+          <p>
+            Doodle-Clicker will be 100% free FOREVER!
+          </p>
+         <a href="https://paypal.me/dudadubz">
+        <p>
+            Donate to our PayPal.
+        </p>
+          </a>
+          <a href="#">
+          <p>
+            Submit your doodles.
+          </p>
+            </a>
+          <p>
+            ___________________________________
+          </p>
+                    <p>
+            Featured Doodles:
+          </p>
+          <p>
+            The Cookie | Darrell McKenney
+          </p>
+          <p>
+            Auto-Clicker | Darrell McKenney
+          </p>
+          <p>
+           Cookie Farm | Darrell McKenney
+          </p>
+          <p>
+           Cookie Factory | Darrell McKenney
+          </p>
+          <p>
+            Cookie Rocket | Anonymous
+          </p>
+          <p>
+            Cookie Portal | Anonymous
+          </p>
+          <p>
+            Cookie Time Machine | Anonymous
+          </p>
+          <p>
+            ___________________________________
+          </p>
+        </th>
+        </tr>
+        </table>
+    </div>
+    <br><br>
     <script>
     function save() {
       localStorage.setItem("cookiecount", cookiecount);
